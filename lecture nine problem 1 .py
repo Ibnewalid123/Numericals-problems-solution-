@@ -1,5 +1,5 @@
 #Problems for Lecture 9
-#we have to find the roots of a qudratic equation given as ax^2+bx+c=0
+#we have to find the roots of a quadratic equation given as ax^2+bx+c=0
 #and use conditionls 
 
 #first importing math 
