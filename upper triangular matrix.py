@@ -7,7 +7,6 @@ matrix=[[1,2,3,4],
         [2,3,5,3],
         [5,6,3,5],
         [9,8,23,2]]
-upper=matrix
 
 #first upper matrix
 row,col=np.shape(matrix)
