@@ -32,18 +32,3 @@ while logic==False:
 
 print(x,y,z)
 #print (x[i-1],y[i-1],z[i-1])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
