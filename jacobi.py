@@ -18,16 +18,18 @@ while logic==False:
    #x.append(x0)
    #y.append(y0)
    #z.append(z0)
-   x=x0
-   y=y0
-   z=z0
-   x0=(d[0]-y0*a[0][1]-z0*a[0][2])/a[0][0]
-   y0=(d[1]-x0*a[1][0]-z0*a[1][2])/a[1][1]
-   z0=(d[2]-x0*a[2][0]-y0*a[2][1])/a[2][2]
+   
+   x=(d[0]-y0*a[0][1]-z0*a[0][2])/a[0][0]
+   y=(d[1]-x0*a[1][0]-z0*a[1][2])/a[1][1]
+   z=(d[2]-x0*a[2][0]-y0*a[2][1])/a[2][2]
+   
+   x0=z
+   y0=y
+   z0=y
 
    
    #if x[i]==x0 and y[i]==y0 and z[i]==z0:
-   if x==x0 and y==y0 and z==z0:
+   if (x*a[0][0]+y*a[0][1]+z*a[0][2])==b[0]:
       logic=True
 
 print(x,y,z)
