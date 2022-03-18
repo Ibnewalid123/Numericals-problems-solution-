@@ -49,7 +49,7 @@ def max_finder(matrix):
 
 
 T=np.matmul(np.linalg.inv(diagonal_matrix(matrix)-lower_triangular_matrix(matrix)),Upper_triangular_matrix(matrix))
-#have to work on this line as i am not quite sure how many eigen array a linear system it can retrun 
+#have to work on this line as i am not quite sure how many eigen vector a linear system it can retrun 
 eigen1,eigen2=np.linalg.eig(T)
 eigen2=np.abs(eigen2)
 
