@@ -87,15 +87,15 @@ def create_matrix():
         for j in range(1,total_mesh):
 
             if i==j:
-                a=diffusion_coefficient(i)/mesh_size+diffusion_coefficient(i+1)/mesh_size
+                
+                matrix[i][j]=diffusion_coefficient(i)/mesh_size+diffusion_coefficient(i+1)/mesh_size
                 +((absorbtion_cross_section(i)+absorbtion_cross_section(i+1)))*mesh_size/2
                 -(fission_crossection(i)+fission_crossection(i+1))*mesh_size/2
-                matrix[i][j]=a
-
                 
                 matrix[i][j-1]=-diffusion_coefficient(i)/mesh_size
-                matrix[i][j+1]=-diffusion_coefficient(a)/mesh_size
-    
+                matrix[i][j+1]=-diffusion_coefficient(i+1)mesh_size
+                
+    """ boundary conditons """
     matrix[0][0]=diffusion_coefficient(1)/mesh_size+diffusion_coefficient(1+1)/mesh_size
     (absorbtion_cross_section(1)+absorbtion_cross_section(1+1))*mesh_size/2-(fission_crossection(1)+fission_crossection(1+1))*mesh_size/2
 
