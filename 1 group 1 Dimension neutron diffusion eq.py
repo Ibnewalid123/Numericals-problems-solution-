@@ -2,7 +2,7 @@
 ################# I will fix it later after i figure it out what the hell is wrong with it ############################################
 ####################################### but my initial guess is I used the wrong constants ############################################
 ################################# OK. the code is OK. The problem was I was using smaller mesh size and larger convergence value""""""
-""""""""""""""""""""""""it should have been smaller mesh size and much smaller convergence value """""""""""""""""""""""""""""""""""
+""""""""""""""""""""""it should have been smaller mesh size and much smaller convergence value """""""""""""""""""""""""""""""""""
 
 
 import math 
