@@ -33,7 +33,7 @@ def constant_vector(size_of=0.1):
     constant_vector=np.zeros(int(total_mesh+1))
 
     constant_vector[0:int(size_of*total_mesh)]=external_source*mesh_size
-    constant_vector[int((1-size_of)*total_mesh):]= external_source*mesh_size
+    constant_vector[int((size_of)*total_mesh):]= external_source*mesh_size
 
     return constant_vector
 
