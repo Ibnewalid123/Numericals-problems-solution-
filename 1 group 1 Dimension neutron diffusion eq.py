@@ -95,7 +95,7 @@ def create_matrix():
                 -(fission_crossection(i)+fission_crossection(i+1))*mesh_size/2
                 
                 matrix[i][j-1]=-diffusion_coefficient(i)/mesh_size
-                matrix[i][j+1]=-diffusion_coefficient(i+1)mesh_size
+                matrix[i][j+1]=-diffusion_coefficient(i+1)/mesh_size
                 
     """ boundary conditons """
     matrix[0][0]=diffusion_coefficient(1)/mesh_size+diffusion_coefficient(1+1)/mesh_size
