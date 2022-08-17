@@ -55,10 +55,11 @@ def succesive_over_relaxation (matrix,constant_vector,epsilon,initial_guess=None
                 x1[i]=x2[i]
             
 
-            convergence=abs (x2[i]-c)/x2[i]
-            c=x2[i]
+            convergence=abs (np.linalg.norm(x2)-c)/np.linalg.norm(x2)
+            c=np.linalg.norm(x1)
             if convergence<epsilon:
                 logic=True
+            print(convergence)
             
         print(iteration)
         return x1
